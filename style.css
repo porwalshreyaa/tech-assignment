@@ -1,0 +1,77 @@
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    overflow-block:hidden;
+    width: auto;
+}
+
+
+.card {
+    /* background-image: url("public/bg.webp"); */
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    border-radius: 0.8em;
+    color: black;
+    padding: 2px;
+    word-break: normal;
+    white-space: normal;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+   @media screen and (min-width: 300px) {
+.card {
+  height: 500px;
+            min-width: 230px;
+}
+}
+
+    @media screen and (min-width: 600px) {
+.card {
+  height: 400px;
+            min-width: 450px;
+}
+}
+
+    @media screen and (min-width: 700px) and (max-width: 760px) {
+.card {
+  height: 30dvh;
+            min-width: 80dvh;
+}
+}
+
+    @media screen and (min-width: 760px) and (max-width: 800px) {
+.card {
+  height: 400px;
+            min-width: 300px;
+}
+}
+
+@media screen and (min-width: 800px) {
+.card {
+  height: 400px;
+            min-width: 260px!important;
+}
+}
+    @media screen and (min-width: 900px)  {
+.card {
+  height: 400px;
+            width: 340px!important;
+}
+}
+    @media screen and (min-width:1100) {
+.card {
+  height: 400px;
+          width: 500px !important;
+}
+}
+
+    p {
+        min-width: 200px;
+    }
+
+.header {
+    background-color: #5078f2;
+	background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+	 color: rgb(65, 62, 62)
+}

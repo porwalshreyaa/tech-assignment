@@ -25,7 +25,15 @@ button.carindi {
     white-space: normal;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
-    width: 18rem;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.card {
+    max-width: 100%;
+}
+.card-text {
+    word-wrap: break-word;
 }
 
 
@@ -41,7 +49,7 @@ button.carindi {
     overflow-wrap: break-word;
     overflow: auto;
     text-overflow: ellipsis;
-    width: 50rem!important;
+    max-width: 100%;
     text-align: justify;
     vertical-align: middle;
     min-height: 20rem;
@@ -99,8 +107,7 @@ button.carindi {
 
 p {
     min-width: 200px;
-    overflow: auto;
-    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 
@@ -136,10 +143,6 @@ p {
 }
 
 
-/* .tolanding>a:hover {
-    transform: translateX(10px);
-
-} */
 
 .btn {
     background-color:  #f7dd85;

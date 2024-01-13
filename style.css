@@ -1,7 +1,8 @@
 body {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: auto;
     vertical-align: middle;
 }
@@ -11,6 +12,11 @@ body {
     background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
     
 }
+button.carindi {
+    height: 10px!important;
+    width: 10px!important;
+    border-radius: 50%;
+}
 
 .card {
     border: none;
@@ -19,75 +25,82 @@ body {
     white-space: normal;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
-    width: 12rem!important;
+    width: 18rem;
 }
+
 
 .box {
     /* background-image: url("public/bg.webp"); */
     background-color: aliceblue;
     background-repeat: no-repeat;
-    border-radius: 0.8em;
+    border-radius: 0.em;
     color: black;
     padding: 2px;
     word-break: normal;
     white-space: normal;
     overflow-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis
+    overflow: auto;
+    text-overflow: ellipsis;
+    width: 50rem!important;
+    text-align: justify;
+    vertical-align: middle;
+    min-height: 20rem;
 }
 
 
-@media screen and (min-width: 300px) {
-    .card {
+/* @media screen and (min-width: 300px) {
+    .box {
         height: 500px;
         min-width: 230px;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .card {
+    .box {
         height: 400px;
         min-width: 450px;
     }
 }
 
 @media screen and (min-width: 700px) and (max-width: 760px) {
-    .card {
+    .box {
         height: 30dvh;
         min-width: 80dvh;
     }
 }
 
 @media screen and (min-width: 760px) and (max-width: 800px) {
-    .card {
+    .box {
         height: 400px;
         min-width: 300px;
     }
 }
 
 @media screen and (min-width: 800px) {
-    .card {
+    .box {
         height: 400px;
         min-width: 260px !important;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .card {
+    .box {
         height: 400px;
         width: 340px !important;
     }
 }
 
 @media screen and (min-width:1100) {
-    .card {
+    .box {
         height: 400px;
         width: 500px !important;
     }
-}
+} */
 
 p {
     min-width: 200px;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 

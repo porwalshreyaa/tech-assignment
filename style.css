@@ -1,12 +1,28 @@
 body {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    overflow-block:hidden;
+    overflow: auto;
     width: auto;
+    vertical-align: middle;
 }
 
+.banner {
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
+    
+}
 
 .card {
+    border: none;
+    color: black;
+    padding: 1px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    width: 12rem!important;
+}
+
+.box {
     /* background-image: url("public/bg.webp"); */
     background-color: aliceblue;
     background-repeat: no-repeat;
@@ -17,61 +33,117 @@ body {
     white-space: normal;
     overflow-wrap: break-word;
     overflow: hidden;
+    text-overflow: ellipsis
 }
 
-   @media screen and (min-width: 300px) {
-.card {
-  height: 500px;
-            min-width: 230px;
-}
+
+@media screen and (min-width: 300px) {
+    .card {
+        height: 500px;
+        min-width: 230px;
+    }
 }
 
-    @media screen and (min-width: 600px) {
-.card {
-  height: 400px;
-            min-width: 450px;
-}
-}
-
-    @media screen and (min-width: 700px) and (max-width: 760px) {
-.card {
-  height: 30dvh;
-            min-width: 80dvh;
-}
+@media screen and (min-width: 600px) {
+    .card {
+        height: 400px;
+        min-width: 450px;
+    }
 }
 
-    @media screen and (min-width: 760px) and (max-width: 800px) {
-.card {
-  height: 400px;
-            min-width: 300px;
+@media screen and (min-width: 700px) and (max-width: 760px) {
+    .card {
+        height: 30dvh;
+        min-width: 80dvh;
+    }
 }
+
+@media screen and (min-width: 760px) and (max-width: 800px) {
+    .card {
+        height: 400px;
+        min-width: 300px;
+    }
 }
 
 @media screen and (min-width: 800px) {
-.card {
-  height: 400px;
-            min-width: 260px!important;
-}
-}
-    @media screen and (min-width: 900px)  {
-.card {
-  height: 400px;
-            width: 340px!important;
-}
-}
-    @media screen and (min-width:1100) {
-.card {
-  height: 400px;
-          width: 500px !important;
-}
+    .card {
+        height: 400px;
+        min-width: 260px !important;
+    }
 }
 
-    p {
-        min-width: 200px;
+@media screen and (min-width: 900px) {
+    .card {
+        height: 400px;
+        width: 340px !important;
     }
+}
+
+@media screen and (min-width:1100) {
+    .card {
+        height: 400px;
+        width: 500px !important;
+    }
+}
+
+p {
+    min-width: 200px;
+}
+
+
 
 .header {
     background-color: #5078f2;
-	background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
-	 color: rgb(65, 62, 62)
+    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+    color: rgb(65, 62, 62);
+    overflow: auto;
+}
+
+.tolanding>a {
+    color: rgb(227, 227, 227);
+    font-size: larger;
+    text-align: right;
+    /* transition: transform 100ms linear; */
+    text-decoration: none;
+    /* animation-direction: alternate-reverse; */
+    position: relative;
+    animation-name: free;
+    animation-duration:1s;
+    animation-iteration-count:  infinite;
+    animation-direction:  alternate;
+    transition-timing-function: linear;
+}
+
+@keyframes free {
+    0%{right:0px;}
+   
+    90%{right:5px;}
+    
+    100%{right:0px}
+}
+
+
+/* .tolanding>a:hover {
+    transform: translateX(10px);
+
+} */
+
+.btn {
+    background-color:  #f7dd85;
+    color: rgb(22, 22, 22); font-size: larger;
+    border: transparent;
+    transition: 0.5s;
+}
+
+
+footer{
+
+    background-color: #ffffff;
+}
+
+.btn:hover {
+    color: rgb(22, 22, 22);
+    transition: 0.5s;
+    background-color: #f7dd85;
+    background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%);
 }
